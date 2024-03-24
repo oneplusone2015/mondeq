@@ -1,0 +1,5 @@
+{
+  "hash": "8a63a67ee0d42c4141e22c9fee887821c2c921dcab4614c24890095e65cb69b1",
+  "signature": "AXwbEAABQR+R8bFGfkjTXbbvN6igfwKh55s5HP6KnvvljOnmves8pxH5ID5fHlq8zdX61fpqpNFNSM4A/2w5YmOkoK4+9J79",
+  "signer": "Verus Coin Foundation Releases@"
+}
